@@ -9,20 +9,28 @@ excerpt: none
   {% include head.html %}
   <body class="layout-table-of-contents">
     <a class="a-skip-to-main" href="#main">Skip to main content</a>
-    <header role="banner" class="site-header">
-      <div class="wrapper">
-        <!-- This h1 element has this id because, unless we set it here,
-        kramdown will populate it with a value based on the content of the
-        element, which results in "18f-content-guide", which is an invalid
-        value due to its starting with a numeral. -->
-        <h1 id="title-18f-content-guide">{{site.title}}</h1>
-        <p>{{site.description}}</p>
-      </div>
-    </header>
+    {% include site-header.html %}
     <main id="main" role="main">
       <div class="wrapper">
-        <ol>
-        </ol>
+        <h1>Find a Supplier</h1>
+        A field with an asterisk (*) before it is a required field.
+        <form action="">
+          <div class="field">
+            <label for="zip">
+              <span>Your ZIP code</span>
+              <input type="text">
+            </label>
+          </div>
+        </form>
+        <h2>Equipment &amp; Supplies</h2>
+        <p>Enter your ZIP code above to find suppliers of the following medical equipment and supplies:</p>
+        <ul>
+          <li>Durable Medical Equipment</li>
+          <li>Prostheses & prosthetic devices</li>
+          <li>Orthotics</li>
+          <li>Supplies</li>        
+        </ul>
+        <a href="#">Learn more about equipment and supplies</a>
       </div>
     </main>
     {% include site-footer.html %}
