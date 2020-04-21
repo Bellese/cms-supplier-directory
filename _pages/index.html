@@ -1,36 +1,94 @@
 ---
 permalink: /
-title: Introduction
+title: Homepage
 layout: none   
 excerpt: none
 ---
 
 <html lang="en">
   {% include head.html %}
-  <body class="layout-table-of-contents">
+  <body class="layout-homepage">
     <a class="a-skip-to-main" href="#main">Skip to main content</a>
     {% include site-header.html %}
     <main id="main" role="main">
       <div class="wrapper">
         <h1>Find a Supplier</h1>
-        A field with an asterisk (*) before it is a required field.
         <form action="">
           <div class="field">
-            <label for="zip">
-              <span>Your ZIP code</span>
-              <input type="text">
+            <label for="keyword">
+              <span>Find</span>
+              <input type="text" id="keyword" name="keyword">
             </label>
           </div>
+          <div class="field">
+            <label for="zip">
+              <span>Near</span>
+              <input type="number" maxlength="5">
+            </label>
+          </div>
+          <button type="submit">Search</button>
         </form>
-        <h2>Equipment &amp; Supplies</h2>
-        <p>Enter your ZIP code above to find suppliers of the following medical equipment and supplies:</p>
-        <ul>
-          <li>Durable Medical Equipment</li>
-          <li>Prostheses & prosthetic devices</li>
-          <li>Orthotics</li>
-          <li>Supplies</li>        
-        </ul>
-        <a href="#">Learn more about equipment and supplies</a>
+        <section>
+          <h1>Common supply categories</h1>
+          <ol>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Mobility</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Visual aids</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Diabetes</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Orthotics</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Prosthetics</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Hearing</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Respiratory</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="" alt="">
+                <span>Stimulators</span>
+              </a>
+            </li>
+          </ol>
+          <a href="#">See the list of supply categories</a>
+        </section>
+        <section>
+          <h1>Medicare coverage</h1>
+          <ul>
+            <li><a href="#">Learn about Medicare coverage</a></li>
+            <li><a href="#">See what's covered</a></li>
+          </ul>
+        </section>
       </div>
     </main>
     {% include site-footer.html %}
